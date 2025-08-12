@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header style={{ backgroundColor: '#f4a261', padding: '1rem', textAlign: 'center' }}>
+    <header style={{ backgroundColor: '#6ef805ff', padding: '16px', textAlign: 'center' }}>
       <h1>Curt Lee Minyard</h1>
     </header>
   );

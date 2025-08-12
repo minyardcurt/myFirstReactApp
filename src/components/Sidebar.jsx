@@ -4,7 +4,7 @@ function Sidebar() {
   const [bgColor, setBgColor] = useState('#a8dadc');
 
   return (
-    <aside style={{ backgroundColor: bgColor, padding: '1rem', width: '200px' }}>
+    <aside style={{ backgroundColor: bgColor, padding: '16px', width: '200px' }}>
       <ul style={{ listStyleType: 'none', padding: 0 }}>
         {['#a8dadc', '#ffafcc', '#caffbf'].map((color) => (
           <li key={color}>
