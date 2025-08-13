@@ -10,11 +10,10 @@ function Square({ name, bgImage }) {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        color: '#fff',
+        color: 'white',
         fontWeight: 'bold',
-        fontSize: '1.2rem',
+        fontSize: '16px',
         borderRadius: '8px',
-        boxShadow: '0 0 8px rgba(0,0,0,0.3)',
       }}
     >
       {name}
