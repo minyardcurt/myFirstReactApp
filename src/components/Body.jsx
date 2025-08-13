@@ -16,7 +16,7 @@ function Body() {
       }}
     >
       <img
-        src="/me.jpg"
+        src="./me.jpg"
         alt="My photo"
         style={{
           width: '50%',
