@@ -1,7 +1,8 @@
 import Square from './Square';
 
 function Body() {
-  const squares = [
+  // List of square data
+  const squareList = [
     { name: 'square 1', bgImage: 'linear-gradient(to right, #ff7e5f, #feb47b)' },
     { name: 'square 2', bgImage: 'linear-gradient(to left, #6a11cb, #2575fc)' },
     { name: 'square 3', bgImage: 'linear-gradient(to top, #8e9eab, #eef2f3)' },
@@ -10,41 +11,41 @@ function Body() {
   return (
     <main
       style={{
-        backgroundColor: '#04b7bdff',
-        flex: 1,
-        padding: '1rem',
+        backgroundColor: '#04b7bd',
+        padding: '20px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center', 
+        alignItems: 'center',
       }}
     >
+      {/* Image */}
       <img
         src="/me.jpg"
-        alt="Descriptive"
+        alt="My photo"
         style={{
           width: '50%',
           maxHeight: '300px',
-          objectFit: 'cover',
-          borderRadius: '16px',
-          marginBottom: '1rem',
+          borderRadius: '10px',
+          marginBottom: '20px',
         }}
       />
 
-      <p style={{ textAlign: 'center', marginBottom: '2rem', maxWidth: '600px' }}>
-        This is what a serious coder looks like, When He is Winning!
+      {/* Description text */}
+      <p style={{ textAlign: 'center', marginBottom: '30px' }}>
+        This is what a serious coder looks like, when he is winning!
       </p>
 
+      {/* Squares container */}
       <div
         style={{
           display: 'flex',
+          gap: '10px',
           justifyContent: 'center',
-          gap: '1rem',
-          width: '100%',
-          maxWidth: '700px',
+          flexWrap: 'wrap',
         }}
       >
-        {squares.map((square) => (
-          <Square key={square.name} name={square.name} bgImage={square.bgImage} />
+        {squareList.map((item) => (
+          <Square key={item.name} name={item.name} bgImage={item.bgImage} />
         ))}
       </div>
     </main>
