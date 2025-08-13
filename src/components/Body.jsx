@@ -1,7 +1,6 @@
 import Square from './Square';
 
 function Body() {
-  // List of square data
   const squareList = [
     { name: 'square 1', bgImage: 'linear-gradient(to right, #ff7e5f, #feb47b)' },
     { name: 'square 2', bgImage: 'linear-gradient(to left, #6a11cb, #2575fc)' },
@@ -18,7 +17,6 @@ function Body() {
         alignItems: 'center',
       }}
     >
-      {/* Image */}
       <img
         src="/me.jpg"
         alt="My photo"
@@ -29,13 +27,9 @@ function Body() {
           marginBottom: '20px',
         }}
       />
-
-      {/* Description text */}
       <p style={{ textAlign: 'center', marginBottom: '30px' }}>
         This is what a serious coder looks like, when he is winning!
       </p>
-
-      {/* Squares container */}
       <div
         style={{
           display: 'flex',
