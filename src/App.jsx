@@ -5,9 +5,9 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div>
       <Header />
-      <div style={{ display: 'flex', flex: 1 }}>
+      <div>
         <Sidebar />
         <Body />
       </div>
