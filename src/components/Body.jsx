@@ -26,7 +26,8 @@ function Body() {
         }}
       />
       <p style={{ textAlign: 'center', marginBottom: '30px' }}>
-        This is what a serious coder looks like, when he is winning!
+        This is what a serious coder looks like, when he is winning!,
+        K.Rose wishes he might look this good at 55.
       </p>
       <div
         style={{
